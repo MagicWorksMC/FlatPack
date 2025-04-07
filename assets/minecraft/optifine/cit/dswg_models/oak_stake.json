@@ -1,0 +1,126 @@
+{
+	"credit": "Daswaget",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "dswg_weapons_plus/wooden_stake/oak_stake",
+		"particle": "dswg_weapons_plus/wooden_stake/oak_stake_particle"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 7],
+			"to": [9, 7, 9],
+			"faces": {
+				"north": {"uv": [7.5, 10.5, 8.5, 14], "texture": "#0"},
+				"east": {"uv": [6.5, 10.5, 7.5, 14], "texture": "#0"},
+				"south": {"uv": [5, 10.5, 6, 14], "texture": "#0"},
+				"west": {"uv": [4, 10.5, 5, 14], "texture": "#0"},
+				"up": {"uv": [9, 10.5, 10, 11.5], "texture": "#0"},
+				"down": {"uv": [10, 13, 9, 14], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.1, -0.25, 7.1],
+			"to": [8.9, 0, 8.9],
+			"faces": {
+				"north": {"uv": [7.5, 14.5, 8.5, 15], "texture": "#0"},
+				"east": {"uv": [8.5, 14.5, 7.5, 15], "texture": "#0"},
+				"south": {"uv": [7.5, 14.5, 8.5, 15], "texture": "#0"},
+				"west": {"uv": [8.5, 14.5, 7.5, 15], "texture": "#0"},
+				"up": {"uv": [9, 10.5, 10, 11.5], "texture": "#0"},
+				"down": {"uv": [10, 13, 9, 14], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.2, 7, 7.2],
+			"to": [8.8, 8, 8.8],
+			"faces": {
+				"north": {"uv": [7.5, 9, 8.5, 10], "texture": "#0"},
+				"east": {"uv": [8.5, 9, 7.5, 10], "texture": "#0"},
+				"south": {"uv": [7.5, 9, 8.5, 10], "texture": "#0"},
+				"west": {"uv": [8.5, 9, 7.5, 10], "texture": "#0"},
+				"up": {"uv": [9, 10.5, 10, 11.5], "texture": "#0"},
+				"down": {"uv": [10, 13, 9, 14], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.4, 8, 7.4],
+			"to": [8.6, 9, 8.6],
+			"faces": {
+				"north": {"uv": [7.5, 7.5, 8.5, 8.5], "texture": "#0"},
+				"east": {"uv": [8.5, 7.5, 7.5, 8.5], "texture": "#0"},
+				"south": {"uv": [7.5, 7.5, 8.5, 8.5], "texture": "#0"},
+				"west": {"uv": [8.5, 7.5, 7.5, 8.5], "texture": "#0"},
+				"up": {"uv": [9, 10.5, 10, 11.5], "texture": "#0"},
+				"down": {"uv": [10, 13, 9, 14], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7.6, 9, 7.6],
+			"to": [8.4, 10, 8.4],
+			"faces": {
+				"north": {"uv": [7.5, 6, 8.5, 7], "texture": "#0"},
+				"east": {"uv": [8.5, 6, 7.5, 7], "texture": "#0"},
+				"south": {"uv": [7.5, 6, 8.5, 7], "texture": "#0"},
+				"west": {"uv": [8.5, 6, 7.5, 7], "texture": "#0"},
+				"up": {"uv": [9, 10.5, 10, 11.5], "texture": "#0"},
+				"down": {"uv": [10, 13, 9, 14], "texture": "#0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, -28],
+			"translation": [0, 2.5, -1.25],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -28],
+			"translation": [0, 2.5, -1.25],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 97, -67],
+			"translation": [-0.75, 4, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 97, -67],
+			"translation": [-0.75, 4, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"ground": {
+			"rotation": [0, 0, 45],
+			"translation": [-2.25, 3.25, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"gui": {
+			"rotation": [0, 0, -45],
+			"translation": [2.5, 2.5, 0],
+			"scale": [-1.2, 1.2, -1.2]
+		},
+		"head": {
+			"rotation": [0, 90, -45],
+			"translation": [0, 8.5, -8.5],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"fixed": {
+			"rotation": [0, 0, 45],
+			"translation": [-2.5, 2.5, -0.9],
+			"scale": [1.2, 1.2, 1.2]
+		}
+	},
+	"groups": [
+		{
+			"name": "oak_stake",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": []
+		},
+		0,
+		1,
+		2,
+		3,
+		4
+	]
+}

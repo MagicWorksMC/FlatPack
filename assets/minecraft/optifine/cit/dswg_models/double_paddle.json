@@ -1,0 +1,125 @@
+{
+	"credit": "Daswaget",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "dswg_weapons_plus/paddle/double_paddle",
+		"particle": "dswg_weapons_plus/paddle/double_paddle_particle"
+	},
+	"elements": [
+		{
+			"from": [7, 3, 7.5],
+			"to": [9, 21, 8.5],
+			"faces": {
+				"north": {"uv": [7.5, 3.5, 8.5, 12.5], "texture": "#0"},
+				"east": {"uv": [7.5, 3.5, 8, 12.5], "texture": "#0"},
+				"south": {"uv": [8.5, 3.5, 7.5, 12.5], "texture": "#0"},
+				"west": {"uv": [8, 3.5, 8.5, 12.5], "texture": "#0"},
+				"up": {"uv": [8.5, 3.5, 7.5, 4], "texture": "#0"},
+				"down": {"uv": [8.5, 12, 7.5, 12.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 21, 7.5],
+			"to": [10, 22, 8.5],
+			"faces": {
+				"north": {"uv": [7, 3, 9, 3.5], "texture": "#0"},
+				"east": {"uv": [7, 3, 7.5, 3.5], "texture": "#0"},
+				"south": {"uv": [9, 3, 7, 3.5], "texture": "#0"},
+				"west": {"uv": [8.5, 3, 9, 3.5], "texture": "#0"},
+				"up": {"uv": [9, 3, 7, 3.5], "texture": "#0"},
+				"down": {"uv": [12.5, 3, 10.5, 3.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, 22, 7.5],
+			"to": [11, 28, 8.5],
+			"faces": {
+				"north": {"uv": [6.5, 0, 9.5, 3], "texture": "#0"},
+				"east": {"uv": [6.5, 0, 7, 3], "texture": "#0"},
+				"south": {"uv": [9.5, 0, 6.5, 3], "texture": "#0"},
+				"west": {"uv": [9, 0, 9.5, 3], "texture": "#0"},
+				"up": {"uv": [9.5, 0, 6.5, 0.5], "texture": "#0"},
+				"down": {"uv": [13, 2.5, 10, 3], "texture": "#0"}
+			}
+		},
+		{
+			"from": [6, 2, 7.5],
+			"to": [10, 3, 8.5],
+			"faces": {
+				"north": {"uv": [7, 12.5, 9, 13], "texture": "#0"},
+				"east": {"uv": [7, 12.5, 7.5, 13], "texture": "#0"},
+				"south": {"uv": [9, 12.5, 7, 13], "texture": "#0"},
+				"west": {"uv": [8.5, 12.5, 9, 13], "texture": "#0"},
+				"up": {"uv": [12.5, 12.5, 10.5, 13], "texture": "#0"},
+				"down": {"uv": [9, 12.5, 7, 13], "texture": "#0"}
+			}
+		},
+		{
+			"from": [5, -4, 7.5],
+			"to": [11, 2, 8.5],
+			"faces": {
+				"north": {"uv": [6.5, 13, 9.5, 16], "texture": "#0"},
+				"east": {"uv": [6.5, 13, 7, 16], "texture": "#0"},
+				"south": {"uv": [9.5, 13, 6.5, 16], "texture": "#0"},
+				"west": {"uv": [9, 13, 9.5, 16], "texture": "#0"},
+				"up": {"uv": [13, 13, 10, 13.5], "texture": "#0"},
+				"down": {"uv": [9.5, 15.5, 6.5, 16], "texture": "#0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0, -1.25, 1.25],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -90, 0],
+			"translation": [0, -1.25, 1.25],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 97, 19],
+			"translation": [1, -0.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 97, 19],
+			"translation": [1, -0.5, 0],
+			"scale": [-0.8, 0.8, -0.8]
+		},
+		"ground": {
+			"rotation": [0, 0, 45],
+			"translation": [1.5, 5.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"gui": {
+			"rotation": [0, 0, -45],
+			"translation": [-2.5, -2.5, 0],
+			"scale": [-0.8, 0.8, -0.8]
+		},
+		"head": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 7.25, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"fixed": {
+			"rotation": [0, 0, 45],
+			"translation": [2.75, -2.75, -0.9]
+		}
+	},
+	"groups": [
+		{
+			"name": "double_paddle",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": []
+		},
+		0,
+		1,
+		2,
+		3,
+		4
+	]
+}

@@ -1,0 +1,67 @@
+{
+    "test.sounds.sandstorm" : {
+        "sounds":[
+            "songs/sandstorm"
+        ]
+    },
+    "fw.court.object" : {
+        "sounds":[
+            "court/objection"
+        ]
+    },
+    "fw.court.guilty" : {
+        "sounds":[
+            "court/guilty"
+        ]
+    },
+    "fw.court.godot" : {
+        "sounds":[
+            "court/gobject"
+        ]
+    },
+    "fw.court.gavel" : {
+        "sounds":[
+            "court/gavel"
+        ]
+    },
+    "sellouts.followthemoney.loop" : {
+        "sounds":[
+            "sellouts/followthemoneyloop"
+        ]
+    },
+    "sellouts.followthemoney" : {
+        "sounds":[
+            "sellouts/followthemoney"
+        ]
+    },
+    "sellouts.deepspacemystery.loop" : {
+        "sounds":[
+            "sellouts/deepspacemysteryloop"
+        ]
+    },
+    "sellouts.deepspacemystery" : {
+        "sounds":[
+            "sellouts/deepspacemystery"
+        ]
+    },
+    "sellouts.deepspacedreams" : {
+        "sounds":[
+            "sellouts/deepspacedreams"
+        ]
+    },
+    "sellouts.deepspacedreamsloop" : {
+        "sounds":[
+            "sellouts/deepspacedreamsloop"
+        ]
+    },
+    "sellouts.meeting1" : {
+        "sounds":[
+            "sellouts/meeting1"
+        ]
+    },
+    "sellouts.meeting2" : {
+        "sounds":[
+            "sellouts/meeting2"
+        ]
+    }
+}

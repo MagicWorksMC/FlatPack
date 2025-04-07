@@ -1,0 +1,137 @@
+﻿{
+	"credit": "Daswaget",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "dswg_weapons_plus/cane/cane",
+		"particle": "dswg_weapons_plus/cane/cane_particle"
+	},
+	"elements": [
+		{
+			"from": [7, 0, 7.5],
+			"to": [9, 23, 8.5],
+			"faces": {
+				"north": {"uv": [7.5, 2.5, 8.5, 14], "texture": "#0"},
+				"east": {"uv": [7.5, 2.5, 8, 14], "texture": "#0"},
+				"south": {"uv": [8.5, 2.5, 7.5, 14], "texture": "#0"},
+				"west": {"uv": [8, 2.5, 8.5, 14], "texture": "#0"},
+				"up": {"uv": [8.5, 2.5, 7.5, 3], "texture": "#0"},
+				"down": {"uv": [8.5, 13.5, 7.5, 14], "texture": "#0"}
+			}
+		},
+		{
+			"from": [13, 22, 7.5],
+			"to": [15, 23, 8.5],
+			"faces": {
+				"north": {"uv": [4.5, 2.5, 5.5, 3], "texture": "#0"},
+				"east": {"uv": [4.5, 2.5, 5, 3], "texture": "#0"},
+				"south": {"uv": [5.5, 2.5, 4.5, 3], "texture": "#0"},
+				"west": {"uv": [5, 2.5, 5.5, 3], "texture": "#0"},
+				"up": {"uv": [5.5, 2.5, 4.5, 3], "texture": "#0"},
+				"down": {"uv": [5.5, 2.5, 4.5, 3], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 23, 7.5],
+			"to": [10, 24, 8.5],
+			"faces": {
+				"north": {"uv": [7, 2, 8.5, 2.5], "texture": "#0"},
+				"east": {"uv": [7, 2, 7.5, 2.5], "texture": "#0"},
+				"south": {"uv": [8.5, 2, 7, 2.5], "texture": "#0"},
+				"west": {"uv": [8, 2, 8.5, 2.5], "texture": "#0"},
+				"up": {"uv": [13.5, 2, 12, 2.5], "texture": "#0"},
+				"down": {"uv": [13.5, 3.5, 12, 4], "texture": "#0"}
+			}
+		},
+		{
+			"from": [12, 23, 7.5],
+			"to": [15, 24, 8.5],
+			"faces": {
+				"north": {"uv": [4.5, 2, 6, 2.5], "texture": "#0"},
+				"east": {"uv": [4.5, 2, 5, 2.5], "texture": "#0"},
+				"south": {"uv": [6, 2, 4.5, 2.5], "texture": "#0"},
+				"west": {"uv": [5.5, 2, 6, 2.5], "texture": "#0"},
+				"up": {"uv": [11, 2, 9.5, 2.5], "texture": "#0"},
+				"down": {"uv": [11, 3.5, 9.5, 4], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, 24, 7.5],
+			"to": [14, 25, 8.5],
+			"faces": {
+				"north": {"uv": [5, 1.5, 8, 2], "texture": "#0"},
+				"east": {"uv": [5, 1.5, 5.5, 2], "texture": "#0"},
+				"south": {"uv": [8, 1.5, 5, 2], "texture": "#0"},
+				"west": {"uv": [7.5, 1.5, 8, 2], "texture": "#0"},
+				"up": {"uv": [13, 1.5, 10, 2], "texture": "#0"},
+				"down": {"uv": [13, 1.5, 10, 2], "texture": "#0"}
+			}
+		},
+		{
+			"from": [9, 25, 7.5],
+			"to": [13, 26, 8.5],
+			"faces": {
+				"north": {"uv": [5.5, 1, 7.5, 1.5], "texture": "#0"},
+				"east": {"uv": [5.5, 1, 6, 1.5], "texture": "#0"},
+				"south": {"uv": [7.5, 1, 5.5, 1.5], "texture": "#0"},
+				"west": {"uv": [7, 1, 7.5, 1.5], "texture": "#0"},
+				"up": {"uv": [7.5, 1, 5.5, 1.5], "texture": "#0"},
+				"down": {"uv": [5.5, 1, 7.5, 1.5], "texture": "#0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 90, 0],
+			"translation": [0, 0.25, 1.25],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, -90, 0],
+			"translation": [0, 0.25, 1.25],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, 97, 19],
+			"translation": [1, -0.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 97, 19],
+			"translation": [1, -0.5, 0],
+			"scale": [-0.8, 0.8, -0.8]
+		},
+		"ground": {
+			"rotation": [0, 0, 45],
+			"translation": [2, 2.5, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"gui": {
+			"rotation": [0, 0, -45],
+			"translation": [-3, -3, 0],
+			"scale": [-0.8, 0.8, -0.8]
+		},
+		"head": {
+			"rotation": [0, 90, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"fixed": {
+			"rotation": [0, 0, 45],
+			"translation": [3.5, -3.5, -0.9]
+		}
+	},
+	"groups": [
+		{
+			"name": "cane",
+			"origin": [0, 0, 0],
+			"color": 0,
+			"children": []
+		},
+		0,
+		1,
+		2,
+		3,
+		4,
+		5
+	]
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "optifine/cit/dswg_models/chemical_bullet_head",
+        "layer1": "./chemical_bullet"
+    }
+}
