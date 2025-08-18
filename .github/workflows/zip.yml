@@ -8,8 +8,10 @@ jobs:
       uses: actions/checkout@v2
     - name: pull latest and remove old file from repo
       run: |
-        git config --global user.name "MrJityh"
-        git config --global user.email "MrJityh@gmail.com"
+        PREV_COMMIT_AUTHOR_NAME=$(git log -1 --format=%an HEAD^)
+        PREV_COMMIT_AUTHOR_EMAIL=$(git log -1 --format=%ae HEAD^)
+        git config user.name "$PREV_COMMIT_AUTHOR_NAME"
+        git config user.email "$PREV_COMMIT_AUTHOR_EMAIL"
         git config pull.rebase false
         git pull
         rm -f FlatPack-Release.zip
@@ -18,8 +20,9 @@ jobs:
       with:
         filename: 'FlatPack-Release.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
-    - name: push changes to remote
+    - name: Make new commit with previous message
       run: |
-        git add -A
-        git commit -m "New Version Released"
-        git push --force
+        PREV_COMMIT_MESSAGE=$(git log -1 --format=%B HEAD^)
+        git add .
+        git commit -m "$PREV_COMMIT_MESSAGE"
+        git push --force 
