@@ -1,0 +1,40 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": {
+          "text": "Torrent",
+          "type": "text",
+          "color": "gold",
+          "italic": false
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/currency/orange_money" }
+      },
+      {
+        "when": {
+          "text": "Torrent",
+          "type": "text",
+          "color": "gold",
+          "italic": false,
+          "bold": true
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/currency/orange_money" }
+      },
+      {
+        "when": {
+          "text": "Torrent",
+          "type": "text",
+          "italic": false
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/currency/orange_money" }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/orange_dye"
+    }
+  }
+}

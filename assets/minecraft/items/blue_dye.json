@@ -1,0 +1,30 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": {
+          "text": "Tidal",
+          "type": "text",
+          "color": "aqua",
+          "italic": false
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/currency/blue_money" }
+      },
+      {
+        "when": {
+          "text": "Tidal",
+          "type": "text",
+          "italic": false
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/currency/blue_money" }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/blue_dye"
+    }
+  }
+}

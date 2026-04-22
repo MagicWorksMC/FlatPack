@@ -1,0 +1,30 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": {
+          "text": "Tsunami",
+          "type": "text",
+          "color": "light_purple",
+          "italic": false
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/currency/purple_money" }
+      },
+      {
+        "when": {
+          "text": "Tsunami",
+          "type": "text",
+          "italic": false
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/currency/purple_money" }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/purple_dye"
+    }
+  }
+}

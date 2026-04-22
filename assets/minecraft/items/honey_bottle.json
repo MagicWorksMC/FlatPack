@@ -1,0 +1,21 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": {
+          "text": "Moonshine",
+          "type": "text",
+          "italic": false
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/food/moonshine" }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/honey_bottle"
+    }
+  }
+}

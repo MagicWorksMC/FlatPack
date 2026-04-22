@@ -1,0 +1,30 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": {
+          "text": "Empyrium",
+          "type": "text",
+          "color": "gold",
+          "italic": false
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/currency/gold_coin" }
+      },
+      {
+        "when": {
+          "text": "Empyrium",
+          "type": "text",
+          "italic": false
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/currency/gold_coin" }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/gold_ingot"
+    }
+  }
+}
