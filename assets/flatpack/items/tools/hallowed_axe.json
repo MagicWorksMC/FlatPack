@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "flatpack:item/melee/knife"
+    "model": "flatpack:item/tools/hallowed_axe"
   }
 }
