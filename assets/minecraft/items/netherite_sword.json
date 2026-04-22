@@ -1,0 +1,57 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": {
+          "text": "Hallowed Sword",
+          "type": "text",
+          "color": "aqua",
+          "italic": false
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/melee/hallowed_sword" }
+      },
+      {
+        "when": {
+          "text": "Hallowed Sword",
+          "type": "text",
+          "italic": false
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/melee/hallowed_sword" }
+      },
+      {
+        "when": {
+          "text": "Hallowed Sword",
+          "type": "text",
+          "color": "aqua",
+          "italic": true
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/melee/hallowed_sword" }
+      },
+      {
+        "when": {
+          "text": "Hallowed Sword",
+          "type": "text",
+          "italic": true
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/melee/hallowed_sword" }
+      },
+      {
+        "when": {
+          "text": "Cash Stab $$$",
+          "type": "text",
+          "color": "red",
+          "italic": false,
+          "bold": true
+        },
+        "model": { "type": "minecraft:model", "model": "flatpack:item/melee/knife" }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/netherite_sword"
+    }
+  }
+}
