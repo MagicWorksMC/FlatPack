@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "flatpack:item/armor/hallowed/heavy_jess_helmet"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:equippable",
+    "cases": [
+      {
+        "when": {
+            "asset_id": "flatpack:hallowed/heavy_armor",
+            "slot": "feet"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/hallowed/heavy_boots"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/netherite_boots"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:equippable",
+    "cases": [
+      {
+        "when": {
+            "asset_id": "flatpack:hallowed/heavy_armor",
+            "slot": "head"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/armor/hallowed/heavy_helmet"
+            }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:hallowed/heavy_jimmy",
+            "slot": "head"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/armor/hallowed/heavy_helmet"
+            }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:hallowed/heavy_jess",
+            "slot": "head"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/armor/hallowed/heavy_jess_helmet"
+            }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:hallowed/heavy_grey",
+            "slot": "head"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/hallowed/heavy_grey_helmet"
+          }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:hallowed/heavy_ghall",
+            "slot": "head"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/hallowed/heavy_ghall_helmet"
+          }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:hallowed/heavy_kenny",
+            "slot": "head"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/hallowed/heavy_kenny_helmet"
+          }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:hallowed/heavy_kate",
+            "slot": "head"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/hallowed/heavy_kate_helmet"
+          }
+      }
+      ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/netherite_helmet"
+    }
+  }
+}

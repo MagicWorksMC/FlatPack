@@ -1,0 +1,23 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:equippable",
+    "cases": [
+      {
+        "when": {
+            "asset_id": "flatpack:hallowed/heavy_armor",
+            "slot": "legs"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/hallowed/heavy_leggings"
+        }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/diamond_leggings"
+    }
+  }
+}

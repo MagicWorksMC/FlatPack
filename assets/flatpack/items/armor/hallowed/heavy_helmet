@@ -1,0 +1,63 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": {
+            "text": "Harbinger Helmet",
+            "italic": false
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/equipment/hallowed/heavy_jess_helmet"
+            }
+      },
+      {
+        "when": {
+            "text": "Devout Helmet",
+            "italic": false
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/equipment/hallowed/heavy_kenny_helmet"
+            }
+      },
+      {
+        "when": {
+            "text": "Divine Helmet",
+            "italic": false
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/equipment/hallowed/heavy_kate_helmet"
+            }
+      },
+      {
+        "when": {
+            "text": "Enforcer Helmet",
+            "italic": false
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/equipment/hallowed/heavy_grey_helmet"
+            }
+      },
+      {
+        "when": {
+            "text": "Enhanced Helmet",
+            "italic": false
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/equipment/hallowed/heavy_ghall_helmet"
+            }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "flatpack:item/equipment/hallowed/heavy_family_helmet"
+    }
+  }
+}

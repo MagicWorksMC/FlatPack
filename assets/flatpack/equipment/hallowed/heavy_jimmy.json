@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "flatpack:hallowed/heavy_jimmy"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "flatpack:hallowed/heavy_family_legs"
+      }
+    ]
+  }
+}
