@@ -5,14 +5,14 @@
       {
         "model": {
           "type": "minecraft:model",
-          "model": "flatpack:item/laser_gun/laser_gun_arrow"
+          "model": "flatpack:item/ranged/laser_gun"
         },
         "when": "arrow"
       },
       {
         "model": {
           "type": "minecraft:model",
-          "model": "flatpack:item/laser_gun/laser_gun_firework"
+          "model": "flatpack:item/ranged/laser_gun"
         },
         "when": "rocket"
       }
@@ -21,7 +21,7 @@
       "type": "minecraft:condition",
       "on_false": {
         "type": "minecraft:model",
-        "model": "flatpack:item/laser_gun/laser_gun"
+        "model": "flatpack:item/ranged/laser_gun"
       },
       "on_true": {
         "type": "minecraft:range_dispatch",
@@ -29,21 +29,21 @@
           {
             "model": {
               "type": "minecraft:model",
-              "model": "flatpack:item/laser_gun/laser_gun_pulling_1"
+              "model": "flatpack:item/ranged/laser_gun"
             },
             "threshold": 0.58
           },
           {
             "model": {
               "type": "minecraft:model",
-              "model": "flatpack:item/laser_gun/laser_gun_pulling_2"
+              "model": "flatpack:item/ranged/laser_gun"
             },
             "threshold": 1.0
           }
         ],
         "fallback": {
           "type": "minecraft:model",
-          "model": "flatpack:item/laser_gun/laser_gun_pulling_0"
+          "model": "flatpack:item/ranged/laser_gun"
         },
         "property": "minecraft:crossbow/pull"
       },
