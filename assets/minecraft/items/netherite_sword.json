@@ -46,7 +46,7 @@
           "italic": false,
           "bold": true
         },
-        "model": { "type": "minecraft:model", "model": "flatpack:item/melee/knife" }
+        "model": { "type": "minecraft:model", "model": "flatpack:item/melee/dark_knife" }
       }
     ],
     "fallback": {

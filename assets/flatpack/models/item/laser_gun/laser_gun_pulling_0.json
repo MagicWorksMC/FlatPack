@@ -1,10 +1,10 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "custom/laser_gun",
-		"1": "block/redstone_block",
-		"2": "block/lime_stained_glass",
-		"particle": "custom/laser_gun"
+		"0": "flatpack:item/laser_gun/laser_gun",
+		"1": "flatpack:item/laser_gun/redstone_block",
+		"2": "flatpack:item/laser_gun/lime_stained_glass",
+		"particle": "flatpack:item/laser_gun/laser_gun"
 	},
 	"elements": [
 		{
