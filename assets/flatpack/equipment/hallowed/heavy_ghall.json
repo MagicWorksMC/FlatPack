@@ -2,7 +2,7 @@
   "layers": {
     "humanoid": [
       {
-        "texture": "flatpack:hallowed/heavy_family"
+        "texture": "flatpack:hallowed/heavy_ghall"
       }
     ],
     "humanoid_leggings": [
