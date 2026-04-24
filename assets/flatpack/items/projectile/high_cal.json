@@ -1,0 +1,46 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": {
+            "text": "12-cal",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/high_cal/12cal"
+            }
+      },
+      {
+        "when": {
+            "text": "762-mm",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/high_cal/762mm"
+            }
+      },
+      {
+        "when": {
+            "text": "PG-7VL",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/high_cal/pg7vl"
+            }
+      }
+      ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/firework_rocket"
+    }
+  }
+}

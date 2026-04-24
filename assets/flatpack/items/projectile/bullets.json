@@ -1,0 +1,145 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": {
+            "text": "Bullet",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/arrow/bullet"
+            }
+      },
+      {
+        "when": {
+            "text": "Spectral Bullet",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/arrow/spectral_bullet"
+            }
+      },
+      {
+        "when": {
+            "text": "Chemical Bullet",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/arrow/chemical_bullet"
+            }
+      },
+      {
+        "when": {
+            "text": "Black Bullet",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/arrow/black_bullet"
+            }
+      },
+      {
+        "when": {
+            "text": "Black Spectral Bullet",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/arrow/black_spectral_bullet"
+            }
+      },
+      {
+        "when": {
+            "text": "Black Chemical Bullet",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/arrow/black_chemical_bullet"
+            }
+      },
+      {
+        "when": {
+            "text": "Pistol Bullet",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/arrow/pistol_bullet"
+            }
+      },
+      {
+        "when": {
+            "text": "Spectral Pistol Bullet",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/arrow/pistol_spectral_bullet"
+            }
+      },
+      {
+        "when": {
+            "text": "Chemical Pistol Bullet",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/arrow/pistol_chemical_bullet"
+            }
+      },
+      {
+        "when": {
+            "text": "Black Pistol Bullet",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/arrow/pistol_black_bullet"
+            }
+      },
+      {
+        "when": {
+            "text": "Black Spectral Pistol Bullet",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/arrow/pistol_black_spectral_bullet"
+            }
+      },
+      {
+        "when": {
+            "text": "Black Chemical Pistol Bullet",
+            "italic": false,
+            "color": "gold"
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/arrow/pistol_black_chemical_bullet"
+            }
+      }
+      ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "minecraft:item/arrow"
+    }
+  }
+}

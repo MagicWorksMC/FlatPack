@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "flatpack:item/arrow/chemical_bullet_head",
+        "layer1": "flatpack:item/arrow/chemical_bullet"
+    }
+}
