@@ -5,14 +5,14 @@
       {
         "model": {
           "type": "minecraft:model",
-          "model": "flatpack:item/ranged/awp/awp_arrow"
+          "model": "flatpack:item/ranged/rpg/rpg_arrow"
         },
         "when": "arrow"
       },
       {
         "model": {
           "type": "minecraft:model",
-          "model": "flatpack:item/ranged/awp/awp_firework"
+          "model": "flatpack:item/ranged/rpg/rpg_firework"
         },
         "when": "rocket"
       }
@@ -21,7 +21,7 @@
       "type": "minecraft:condition",
       "on_false": {
         "type": "minecraft:model",
-        "model": "flatpack:item/ranged/awp/awp_sniper"
+        "model": "flatpack:item/ranged/rpg/rpg_base"
       },
       "on_true": {
         "type": "minecraft:range_dispatch",
@@ -29,21 +29,21 @@
           {
             "model": {
               "type": "minecraft:model",
-              "model": "flatpack:item/ranged/awp/awp_reload_1"
+              "model": "flatpack:item/ranged/rpg/rpg_reload_1"
             },
             "threshold": 0.58
           },
           {
             "model": {
               "type": "minecraft:model",
-              "model": "flatpack:item/ranged/awp/awp_reload_2"
+              "model": "flatpack:item/ranged/rpg/rpg_reload_2"
             },
             "threshold": 1.0
           }
         ],
         "fallback": {
           "type": "minecraft:model",
-          "model": "flatpack:item/ranged/awp/awp_reload_0"
+          "model": "flatpack:item/ranged/rpg/rpg_reload_0"
         },
         "property": "minecraft:crossbow/pull"
       },

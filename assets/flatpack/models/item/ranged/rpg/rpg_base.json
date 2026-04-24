@@ -2,8 +2,8 @@
 	"credit": "Daswaget",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "dswg_weapons_plus/rpg7/rpg7",
-		"particle": "dswg_weapons_plus/rpg7/rpg7_particle"
+		"0": "flatpack:item/ranged/rpg/rpg",
+		"particle": "flatpack:item/ranged/rpg/rpg_particle"
 	},
 	"elements": [
 		{
