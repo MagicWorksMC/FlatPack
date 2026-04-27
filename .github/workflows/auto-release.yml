@@ -39,7 +39,7 @@ jobs:
       id: prev
       run: |
         git fetch --tags
-        PREV_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+        PREV_TAG=$(git tag --sort=-creatordate | sed -n '2p')
         echo "PREV_TAG=$PREV_TAG" >> $GITHUB_ENV
 
     - name: Generate changelog
@@ -51,12 +51,9 @@ jobs:
           LOG=$(git log $PREV_TAG..HEAD --pretty=format:"- %s")
         fi
 
-        # Escape for GitHub Actions multiline output
-        LOG="${LOG//'%'/'%25'}"
-        LOG="${LOG//$'\n'/'%0A'}"
-        LOG="${LOG//$'\r'/'%0D'}"
-
-        echo "CHANGELOG=$LOG" >> $GITHUB_ENV
+        echo "CHANGELOG<<EOF" >> $GITHUB_ENV
+        echo "$LOG" >> $GITHUB_ENV
+        echo "EOF" >> $GITHUB_ENV
 
 
     # -------------------------------
@@ -66,7 +63,7 @@ jobs:
       uses: softprops/action-gh-release@v3.0.0
       with:
         tag_name: ${{ env.PACK_VERSION }}
-        name: ${{env.PACK_VERSION}}${{ env.PACK_DESCRIPTION }}
+        name: ${{env.PACK_VERSION}} ${{ env.PACK_DESCRIPTION }}
         body: |
           ## Changes in this release
           ${{ env.CHANGELOG }}
@@ -79,7 +76,7 @@ jobs:
       uses: softprops/action-gh-release@v3.0.0
       with:
         tag_name: latest
-        name: ${{env.PACK_VERSION}}${{ env.PACK_DESCRIPTION }}
+        name: ${{env.PACK_VERSION}} ${{ env.PACK_DESCRIPTION }}
         body: |
           ## Latest changes
           ${{ env.CHANGELOG }}
