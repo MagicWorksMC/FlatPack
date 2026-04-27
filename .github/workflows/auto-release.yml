@@ -1,0 +1,53 @@
+name: Create Release
+on:
+  push:
+    paths:
+      - "pack.mcmeta"
+      
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      PACK_NAME: "FlatPack-Release.zip"
+
+    steps:
+    - name: Checkout source repo
+      uses: actions/checkout@v6.0.2
+
+    - name: Extract version from pack.mcmeta
+      id: version
+      run: |
+        VERSION=$(jq -r '.pack.description' pack.mcmeta | sed -E 's/.*(v[0-9]+\.[0-9]+\.[0-9]+).*/\1/')
+        echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+    - name: Remove old ZIP
+      run: rm -f ${{ env.PACK_NAME }}
+
+    - name: Archive Release
+      uses: thedoctor0/zip-release@0.7.6
+      with:
+        filename: ${{ env.PACK_NAME }}
+        exclusions: '*.git* /*node_modules/* .editorconfig'
+
+    # -------------------------------
+    # Create versioned release
+    # -------------------------------
+    - name: Create versioned release
+      uses: softprops/action-gh-release@v3.0.0
+      with:
+        tag_name: v${{ steps.version.outputs.version }}
+        name: FlatPack v${{ steps.version.outputs.version }}
+        files: ${{ env.PACK_NAME }}
+
+    # -------------------------------
+    # Update "latest" release
+    # -------------------------------
+    - name: Update latest release
+      uses: softprops/action-gh-release@3.0.0
+      with:
+        tag_name: latest
+        name: Latest FlatPack Release
+        files: ${{ env.PACK_NAME }}
+        prerelease: false
