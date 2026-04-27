@@ -25,7 +25,7 @@ jobs:
         rm -f ${{ env.PACK_NAME }}
 
     - name: Archive Release
-      uses: thedoctor0/zip-release@master
+      uses: thedoctor0/zip-release@0.7.6
       with:
         filename: ${{ env.PACK_NAME }}
         exclusions: '*.git* /*node_modules/* .editorconfig'
