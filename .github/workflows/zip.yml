@@ -65,5 +65,4 @@ jobs:
         git commit -m "$FINAL_MSG" || echo "No changes to commit"
 
         # Push using PAT
-        echo "PUSH URL: https://x-access-token:${{ secrets.GITREPOPAT }}@github.com/MagicWorksMC/.github.git"
         git push https://x-access-token:${{ secrets.GITREPOPAT }}@github.com/MagicWorksMC/.github.git
