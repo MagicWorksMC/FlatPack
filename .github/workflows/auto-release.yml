@@ -16,11 +16,12 @@ jobs:
     - name: Checkout source repo
       uses: actions/checkout@v6.0.2
 
-    - name: Extract version from pack.mcmeta
-      id: version
+    - name: Extract version and description from pack.mcmeta
       run: |
-        VERSION=$(jq -r '.pack.description' pack.mcmeta | sed -E 's/.*(v[0-9]+\.[0-9]+\.[0-9]+).*/\1/')
-        echo "version=$VERSION" >> $GITHUB_OUTPUT
+        PACK_VERSION=$(jq -r '.pack.description' pack.mcmeta | sed -E 's/.*(v[0-9]+\.[0-9]+\.[0-9]+).*/\1/')
+        PACK_DESCRIPTION=$(jq -r '.pack.description' pack.mcmeta | sed -E 's/.*v[0-9]+\.[0-9]+\.[0-9]+(.*)/\1/' | xargs)
+        echo "PACK_VERSION=$PACK_VERSION" >> $GITHUB_ENV
+        echo "PACK_DESCRIPTION=$PACK_DESCRIPTION" >> $GITHUB_ENV
 
     - name: Remove old ZIP
       run: rm -f ${{ env.PACK_NAME }}
@@ -37,10 +38,10 @@ jobs:
     - name: Create versioned release
       uses: softprops/action-gh-release@v3.0.0
       with:
-        tag_name: v${{ steps.version.outputs.version }}
-        name: FlatPack v${{ steps.version.outputs.version }}
+        tag_name: ${{ env.PACK_VERSION }}
+        name: ${{ env.PACK_DESCRIPTION }}
         files: ${{ env.PACK_NAME }}
-
+      
     # -------------------------------
     # Update "latest" release
     # -------------------------------
@@ -48,6 +49,6 @@ jobs:
       uses: softprops/action-gh-release@v3.0.0
       with:
         tag_name: latest
-        name: Latest FlatPack Release
+        name: ${{ env.PACK_DESCRIPTION }}
         files: ${{ env.PACK_NAME }}
         prerelease: false
