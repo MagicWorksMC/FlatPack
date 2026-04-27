@@ -12,6 +12,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PACK_NAME: "FlatPack-Release.zip"
+
     steps:
     - name: Checkout source repo
       uses: actions/checkout@v3
@@ -20,12 +23,12 @@ jobs:
       run: |
         git config pull.rebase false
         git pull
-        rm -f FlatPack-Release.zip
+        rm -f ${{ env.PACK_NAME }}
 
     - name: Archive Release
       uses: thedoctor0/zip-release@master
       with:
-        filename: 'FlatPack-Release.zip'
+        filename: ${{ env.PACK_NAME }}
         exclusions: '*.git* /*node_modules/* .editorconfig'
 
     - name: Clone target repo
@@ -37,7 +40,7 @@ jobs:
 
     - name: Copy artifact into target repo  
       run: |
-        cp MWGlobal-Release.zip target/artifacts/resourcepacks
+        cp ${{ env.PACK_NAME }} target/artifacts/resourcepacks
 
     - name: Commit & push to target repo (with original commit message)
       run: |
