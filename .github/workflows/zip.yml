@@ -10,10 +10,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - name: Checkout source repo
+      uses: actions/checkout@v3
 
-    - name: Pull latest and remove old file from repo
+    - name: Pull latest and remove old file
       run: |
         git config pull.rebase false
         git pull
@@ -25,19 +25,40 @@ jobs:
         filename: 'FlatPack-Release.zip'
         exclusions: '*.git* /*node_modules/* .editorconfig'
 
-    - name: Push changes to remote with previous commit info
+    - name: Clone target repo
       run: |
-        # Get previous commit message and author
+        git clone https://github.com/MagicWorksMC/.github target
+      env:
+        GIT_ASKPASS: ""
+        GITHUB_TOKEN: ${{ secrets.GITREPOPAT }}
+
+    - name: Copy artifact into target repo  
+      run: |
+        cp MWGlobal-Release.zip target/artifacts/resourcepacks
+
+    - name: Commit & push to target repo (with original commit message)
+      run: |
+        cd target
+
+        # Remove GitHub Actions default auth header (required for cross-repo push)
+        git config --unset-all http.https://github.com/.extraheader
+
+        # Extract previous commit info from source repo
+        cd ..
         COMMIT_MSG="$(git log -1 --pretty=%B)"
-        COMMIT_AUTHOR_NAME="${{github.event.commits[0].author.username}}"
+        COMMIT_AUTHOR_NAME="${{ github.event.commits[0].author.username }}"
         COMMIT_AUTHOR_EMAIL="$(git log -1 --pretty=%ae)"
         FINAL_MSG="Updated Archive - $COMMIT_AUTHOR_NAME - $COMMIT_MSG"
 
-        # Configure git with auto-zip author
-        git config user.name "Auto-Zip"
-        git config user.email "41898282+github-actions[bot]@://github.com"
+        # Move back into target repo
+        cd target
 
-        # Commit using previous message and author
+        # Configure bot identity
+        git config user.name "Auto-Zip"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
         git add -A
         git commit -m "$FINAL_MSG" || echo "No changes to commit"
-        git push --force
+
+        # Push using PAT
+        git push https://x-access-token:${{ secrets.GITREPOPAT }}@github.com/MagicWorksMC/.github.git
