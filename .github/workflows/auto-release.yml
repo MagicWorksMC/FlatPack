@@ -15,6 +15,9 @@ jobs:
     steps:
     - name: Checkout source repo
       uses: actions/checkout@v6.0.2
+      with:
+        fetch-depth: 0  # Fetch full history for changelog generation
+        fetch-tags: true
 
     - name: Extract version and description from pack.mcmeta
       run: |
@@ -63,7 +66,7 @@ jobs:
       uses: softprops/action-gh-release@v3.0.0
       with:
         tag_name: ${{ env.PACK_VERSION }}
-        name: ${{env.PACK_NAME}}${{ env.PACK_DESCRIPTION }}
+        name: ${{env.PACK_VERSION}}${{ env.PACK_DESCRIPTION }}
         body: |
           ## Changes in this release
           ${{ env.CHANGELOG }}
@@ -76,7 +79,7 @@ jobs:
       uses: softprops/action-gh-release@v3.0.0
       with:
         tag_name: latest
-        name: ${{env.PACK_NAME}}${{ env.PACK_DESCRIPTION }}
+        name: ${{env.PACK_VERSION}}${{ env.PACK_DESCRIPTION }}
         body: |
           ## Latest changes
           ${{ env.CHANGELOG }}
