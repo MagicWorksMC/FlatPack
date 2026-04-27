@@ -6,6 +6,9 @@ on:
       - "README.md"
       - "pack.mcmeta"
       - "pack.png"
+      
+  workflow_dispatch:
+      
 jobs:
   build:
     runs-on: ubuntu-latest
