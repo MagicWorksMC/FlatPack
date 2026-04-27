@@ -52,8 +52,13 @@ jobs:
         # Extract previous commit info from source repo
         cd ..
         COMMIT_MSG="$(git log -1 --pretty=%B)"
-        COMMIT_AUTHOR_NAME="${{ github.event.commits[0].author.username }}"
+        COMMIT_AUTHOR_NAME="${{ github.event.commits[0].author.username || '' }}"
         COMMIT_AUTHOR_EMAIL="$(git log -1 --pretty=%ae)"
+        # Fallback author name if empty
+        if [ -z "$COMMIT_AUTHOR_NAME" ]; then
+          COMMIT_AUTHOR_NAME="$(git log -1 --pretty=%an)"
+        fi
+
         FINAL_MSG="Updated Archive - $COMMIT_AUTHOR_NAME - $COMMIT_MSG"
 
         # Move back into target repo
