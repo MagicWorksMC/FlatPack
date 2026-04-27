@@ -40,7 +40,7 @@ jobs:
       run: |
         cp ${{ env.PACK_NAME }} target/artifacts/resourcepacks
 
-    - name: Commit & push to target repo (with original commit message)
+    - name: Commit & push to target repo
       run: |
         cd target
 
@@ -50,7 +50,7 @@ jobs:
         # Extract previous commit info from source repo
         cd ..
         COMMIT_MSG="$(git log -1 --pretty=%B)"
-        COMMIT_AUTHOR_NAME="${{ github.event.commits[0].author.username }}"
+        COMMIT_AUTHOR_NAME="$(git log -1 --pretty=%an)"
         COMMIT_AUTHOR_EMAIL="$(git log -1 --pretty=%ae)"
         FINAL_MSG="Updated Archive - $COMMIT_AUTHOR_NAME - $COMMIT_MSG"
 
