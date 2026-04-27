@@ -7,8 +7,6 @@ on:
       - "pack.mcmeta"
       - "pack.png"
       
-  workflow_dispatch:
-      
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -52,16 +50,8 @@ jobs:
         # Extract previous commit info from source repo
         cd ..
         COMMIT_MSG="$(git log -1 --pretty=%B)"
-
-        # Detect if this was a manual run and set author info accordingly
-        if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-          COMMIT_AUTHOR_NAME="Manual Run by ${{ github.actor }}"
-        else
-          # Use the real commit author from git history
-          COMMIT_AUTHOR_NAME="${{ github.event.commits[0].author.username }}"
-        fi
+        COMMIT_AUTHOR_NAME="${{ github.event.commits[0].author.username }}"
         COMMIT_AUTHOR_EMAIL="$(git log -1 --pretty=%ae)"
-
         FINAL_MSG="Updated Archive - $COMMIT_AUTHOR_NAME - $COMMIT_MSG"
 
         # Move back into target repo
