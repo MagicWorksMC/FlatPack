@@ -12,10 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     env:
       PACK_NAME: "FlatPack-Release.zip"
+      PAT: ${{ secrets.GITREPOPAT }}
 
     steps:
     - name: Checkout source repo
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6.0.2
 
     - name: Pull latest and remove old file
       run: |
@@ -31,10 +32,9 @@ jobs:
 
     - name: Clone target repo
       run: |
-        git clone https://github.com/MagicWorksMC/.github target
+        git clone https://x-access-token:${{ env.PAT }}@github.com/MagicWorksMC/.github target
       env:
         GIT_ASKPASS: ""
-        GITHUB_TOKEN: ${{ secrets.GITREPOPAT }}
 
     - name: Copy artifact into target repo  
       run: |
@@ -65,4 +65,4 @@ jobs:
         git commit -m "$FINAL_MSG" || echo "No changes to commit"
 
         # Push using PAT
-        git push https://x-access-token:${{ secrets.GITREPOPAT }}@github.com/MagicWorksMC/.github.git
+        git push https://x-access-token:${{ env.PAT }}@github.com/MagicWorksMC/.github.git
