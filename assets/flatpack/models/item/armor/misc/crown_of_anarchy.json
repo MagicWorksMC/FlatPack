@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "flatpack:item/armor/anarchy_helmet"
+    "layer0": "flatpack:item/armor/misc/anarchy_helmet"
   }
 }

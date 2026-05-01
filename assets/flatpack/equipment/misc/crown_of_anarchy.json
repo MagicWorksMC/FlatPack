@@ -2,7 +2,7 @@
   "layers": {
     "humanoid": [
       {
-        "texture": "flatpack:crown_of_anarchy"
+        "texture": "flatpack:misc/crown_of_anarchy"
       }
     ]
   }
