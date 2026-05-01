@@ -1,0 +1,6 @@
+{
+  "parent": "flatpack:item/ranged/sniper/sniper",
+  "textures": {
+    "layer0": "flatpack:item/ranged/sniper/sniper_pulling_1"
+  }
+}

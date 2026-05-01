@@ -1,0 +1,6 @@
+{
+  "parent": "flatpack:item/ranged/hallowed/hallowed_bow",
+  "textures": {
+    "layer0": "flatpack:item/ranged/hallowed/hallowed_bow_pulling_1"
+  }
+}
