@@ -13,6 +13,16 @@
           "type": "minecraft:model",
           "model": "flatpack:item/armor/hallowed/heavy_chestplate"
         }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:cult/ceremonial_robes",
+            "slot": "chest"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/cult/cult_chestplate"
+        }
       }
     ],
     "fallback": {

@@ -73,6 +73,36 @@
           "type": "minecraft:model",
           "model": "flatpack:item/armor/hallowed/heavy_kate_helmet"
           }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:cult/ceremonial_robes",
+            "slot": "head"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/cult/cult_hood"
+        }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:cult/concert_crown",
+            "slot": "head"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/cult/purple_crown"
+        }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:cult/purple_crown",
+            "slot": "head"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/cult/purple_crown"
+        }
       }
       ],
     "fallback": {

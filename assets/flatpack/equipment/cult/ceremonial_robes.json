@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "flatpack:cult/ceremonial"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "flatpack:cult/ceremonial_leggings"
+      }
+    ]
+  }
+}

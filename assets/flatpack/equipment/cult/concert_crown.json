@@ -1,0 +1,9 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "flatpack:cult/ender_crown_layer"
+      }
+    ]
+  }
+}
