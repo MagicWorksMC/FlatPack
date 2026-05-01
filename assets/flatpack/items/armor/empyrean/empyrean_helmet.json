@@ -1,0 +1,33 @@
+{
+  "model": {
+    "type": "minecraft:select",
+    "property": "minecraft:component",
+    "component": "minecraft:custom_name",
+    "cases": [
+      {
+        "when": {
+            "text": "Empyrean Crown",
+            "italic": false
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/armor/empyrean/empyrean_crown"
+            }
+      },
+      {
+        "when": {
+            "text": "Centurion Helmet",
+            "italic": false
+        },
+          "model": {
+            "type": "minecraft:model",
+            "model": "flatpack:item/armor/empyrean/centurion_helmet"
+            }
+      }
+    ],
+    "fallback": {
+      "type": "minecraft:model",
+      "model": "flatpack:item/armor/empyrean/empyrean_crown"
+    }
+  }
+}

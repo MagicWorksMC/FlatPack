@@ -13,6 +13,16 @@
           "type": "minecraft:model",
           "model": "flatpack:item/armor/hallowed/heavy_boots"
         }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:empyrean/empyrean_armor",
+            "slot": "feet"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/empyrean/empyrean_boots"
+        }
       }
     ],
     "fallback": {

@@ -73,7 +73,38 @@
           "type": "minecraft:model",
           "model": "flatpack:item/armor/hallowed/heavy_kate_helmet"
           }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:crown_of_anarchy",
+            "slot": "head"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/crown_of_anarchy"
+          }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:empyrean/empyrean_armor",
+            "slot": "head"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/empyrean/empyrean_crown"
+          }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:empyrean/centurion_armor",
+            "slot": "head"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/empyrean/centurion_helmet"
+          }
       }
+      
       ],
     "fallback": {
       "type": "minecraft:model",

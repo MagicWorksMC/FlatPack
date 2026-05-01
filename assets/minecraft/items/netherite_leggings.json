@@ -13,6 +13,16 @@
           "type": "minecraft:model",
           "model": "flatpack:item/armor/hallowed/heavy_leggings"
         }
+      },
+      {
+        "when": {
+            "asset_id": "flatpack:empyrean/empyrean_armor",
+            "slot": "legs"
+        },
+        "model": {
+          "type": "minecraft:model",
+          "model": "flatpack:item/armor/empyrean/empyrean_leggings"
+        }
       }
     ],
     "fallback": {

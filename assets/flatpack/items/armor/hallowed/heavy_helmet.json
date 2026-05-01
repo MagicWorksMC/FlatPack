@@ -11,7 +11,7 @@
         },
           "model": {
             "type": "minecraft:model",
-            "model": "flatpack:item/equipment/hallowed/heavy_jess_helmet"
+            "model": "flatpack:item/armor/hallowed/heavy_jess_helmet"
             }
       },
       {
@@ -21,7 +21,7 @@
         },
           "model": {
             "type": "minecraft:model",
-            "model": "flatpack:item/equipment/hallowed/heavy_kenny_helmet"
+            "model": "flatpack:item/armor/hallowed/heavy_kenny_helmet"
             }
       },
       {
@@ -31,7 +31,7 @@
         },
           "model": {
             "type": "minecraft:model",
-            "model": "flatpack:item/equipment/hallowed/heavy_kate_helmet"
+            "model": "flatpack:item/armor/hallowed/heavy_kate_helmet"
             }
       },
       {
@@ -41,7 +41,7 @@
         },
           "model": {
             "type": "minecraft:model",
-            "model": "flatpack:item/equipment/hallowed/heavy_grey_helmet"
+            "model": "flatpack:item/armor/hallowed/heavy_grey_helmet"
             }
       },
       {
@@ -51,13 +51,13 @@
         },
           "model": {
             "type": "minecraft:model",
-            "model": "flatpack:item/equipment/hallowed/heavy_ghall_helmet"
+            "model": "flatpack:item/armor/hallowed/heavy_ghall_helmet"
             }
       }
     ],
     "fallback": {
       "type": "minecraft:model",
-      "model": "flatpack:item/equipment/hallowed/heavy_family_helmet"
+      "model": "flatpack:item/armor/hallowed/heavy_family_helmet"
     }
   }
 }
